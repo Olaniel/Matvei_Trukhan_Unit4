@@ -1,9 +1,9 @@
-package Airline;
+package Airline;// РёРјРµРЅРѕРІР°РЅРёРµ РїР°РєРµС‚РѕРІ?
 
 import java.time.LocalTime;
 
 public class Airline {
-	String destination;
+	String destination;//РєСѓРґР° РґРµР»РёСЃСЊ Р°С‚СЂРёР±СѓС‚С‹ РґРѕСЃС‚СѓРїР°?
 	int flightNumber;
 	String aircraftType;
 	LocalTime time;
@@ -22,8 +22,8 @@ public class Airline {
 
 	@Override
 	public String toString() {
-		return "Airline [Пункт назначения=" + destination + ", Номер рейса=" + flightNumber + ", тип самолета="
-				+ aircraftType + ", Время=" + time + ", День недели=" + dayOfWeek + "]";
+		return "Airline [ГЏГіГ­ГЄГІ Г­Г Г§Г­Г Г·ГҐГ­ГЁГї=" + destination + ", ГЌГ®Г¬ГҐГ° Г°ГҐГ©Г±Г =" + flightNumber + ", ГІГЁГЇ Г±Г Г¬Г®Г«ГҐГІГ ="
+				+ aircraftType + ", Г‚Г°ГҐГ¬Гї=" + time + ", Г„ГҐГ­Гј Г­ГҐГ¤ГҐГ«ГЁ=" + dayOfWeek + "]";
 	}
 
 
