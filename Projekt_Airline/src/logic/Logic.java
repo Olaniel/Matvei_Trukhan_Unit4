@@ -7,7 +7,7 @@ import java.util.Scanner;
 import Airline.Airline;
 import Airport.Airport;
 
-public class Logic {
+public class Logic {// Р›РѕРіРёРєСѓ РѕР±СЂР°Р±РѕС‚РєРё РЅРµР»Р·СЏ СЃРјРµС€РёРІР°С‚СЊ СЃ РІРІРѕРґРѕРј-РІС‹РІРѕРґРѕРј. РњС‹ СЂР°РґРё СЌС‚РёС… Р·РЅР°РЅРёР№ С‚Р°СЃРє Рё РґРµР»Р°Р»Рё.
 	
 	
 	public void print (Airport planes) {	
@@ -17,7 +17,7 @@ public class Logic {
 	}
 	
 	public void printByWeekDay (Airport planes) {
-		System.out.println(">Введите день недели от 1 до 7");
+		System.out.println(">Г‚ГўГҐГ¤ГЁГІГҐ Г¤ГҐГ­Гј Г­ГҐГ¤ГҐГ«ГЁ Г®ГІ 1 Г¤Г® 7");
 		Scanner sc = new Scanner(System.in);
 		int weekday = sc.nextInt();
 		boolean check = false;
@@ -30,12 +30,12 @@ public class Logic {
 	    }
 		
 		if (!check) {
-			System.out.println("В этот день нет вылетов");
+			System.out.println("Г‚ ГЅГІГ®ГІ Г¤ГҐГ­Гј Г­ГҐГІ ГўГ»Г«ГҐГІГ®Гў");
 		}
 	}
 	
 	public void printByDestination (Airport planes) {
-		System.out.println(">Введите место назначения");
+		System.out.println(">Г‚ГўГҐГ¤ГЁГІГҐ Г¬ГҐГ±ГІГ® Г­Г Г§Г­Г Г·ГҐГ­ГЁГї");
 		Scanner sc1 = new Scanner(System.in);
 		String Destination = sc1.nextLine();
 		boolean check = false;
@@ -48,12 +48,12 @@ public class Logic {
 	    }
 		
 		if (!check) {
-			System.out.println("В это место нет вылетов");
+			System.out.println("Г‚ ГЅГІГ® Г¬ГҐГ±ГІГ® Г­ГҐГІ ГўГ»Г«ГҐГІГ®Гў");
 		}
 	}
 	
 	public void printByTimeAndWeekday (Airport planes) {
-		System.out.println(">Введите день недели от 1 до 7");
+		System.out.println(">Г‚ГўГҐГ¤ГЁГІГҐ Г¤ГҐГ­Гј Г­ГҐГ¤ГҐГ«ГЁ Г®ГІ 1 Г¤Г® 7");
 		Scanner sc1 = new Scanner(System.in);
 		int DayOfTheWeek = sc1.nextInt();
 		
@@ -61,7 +61,7 @@ public class Logic {
 		LocalTime time = null;
 		sc1 = new Scanner(System.in);
 
-		System.out.println(">Введите время в формате XX:XX");
+		System.out.println(">Г‚ГўГҐГ¤ГЁГІГҐ ГўГ°ГҐГ¬Гї Гў ГґГ®Г°Г¬Г ГІГҐ XX:XX");
 		time = LocalTime.parse(sc1.nextLine());
 		
 		for (Airline s : planes.getPlanes()) {
@@ -72,7 +72,7 @@ public class Logic {
 	    }
 		
 		if (!check) {
-			System.out.println("Нет вылетов");
+			System.out.println("ГЌГҐГІ ГўГ»Г«ГҐГІГ®Гў");
 		}
 	}
 
