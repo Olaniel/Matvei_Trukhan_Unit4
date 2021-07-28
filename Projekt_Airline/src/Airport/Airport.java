@@ -30,7 +30,7 @@ public class Airport {
 	}
 
 	public void get(int index) {
-		
+		// а метод чего пустой?
 	}
 	
 	
